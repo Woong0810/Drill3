@@ -7,15 +7,19 @@ grass = load_image('grass.png')
 character = load_image('character.png')
 
 def move_top():
+    print('Moving top')
     pass
 
 def move_right():
+    print('Moving right')
     pass
 
 def move_bottom():
+    print('Moving bottom')
     pass
 
 def move_left():
+    print('Moving left')
     pass
 
 def move_rectangle():
@@ -30,14 +34,18 @@ def move_circle():
     print('Moving circle')
 
     r = 200
-    for deg in range(0, 360):
+    for deg in range(-90, 270):
         x = r * math.cos(math.radians(deg)) + 400
         y = r * math.sin(math.radians(deg)) + 300
-        clear_canvas()
-        grass.draw_now(400, 30)
-        character.draw_now(x, y)
-        delay(0.01)
+        draw_character_and_grass(x, y)
     pass
+
+def draw_character_and_grass(x: float, y: float):
+    clear_canvas()
+    grass.draw_now(400, 30)
+    character.draw_now(x, y)
+    delay(0.01)
+
 
 while True:
     move_rectangle()
