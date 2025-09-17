@@ -25,10 +25,14 @@ def move_bottom_start():
     pass
 
 def move_bottom_finish():
+    for x in range(20, 400, 2):
+        draw_character_and_grass(x, 90)
     pass
 
 def move_left():
     print('Moving left')
+    for y in range(560, 90, -2):
+        draw_character_and_grass(20, y)
     pass
 
 def move_rectangle():
