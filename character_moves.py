@@ -7,9 +7,11 @@ grass = load_image('grass.png')
 character = load_image('character.png')
 
 def move_rectangle():
+    print('Moving rectangle')
     pass
 
 def move_circle():
+    print('Moving circle')
     pass
 
 while True:
