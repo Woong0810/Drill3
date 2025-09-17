@@ -61,13 +61,27 @@ def draw_character_and_grass(x: float, y: float):
     delay(0.01)
 
 
+def move_rb_to_lt():
+    print('Moving right bottom to left top')
+    pass
+
+
+def move_rt_to_lb():
+    print('Moving left bottom to right top')
+    pass
+
+
 def move_triangle():
+    move_bottom_start()
+    move_rb_to_lt()
+    move_rt_to_lb()
+    move_bottom_finish()
     pass
 
 
 while True:
-    move_rectangle()
-    move_circle()
+    # move_rectangle()
+    # move_circle()
     move_triangle()
 
 close_canvas()
