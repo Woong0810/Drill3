@@ -62,15 +62,14 @@ def draw_character_and_grass(x: float, y: float):
 
 def move_rb_to_lt():
     print('Moving right bottom to left top')
-    for x, y in zip(range(780, 20, -2), range(90, 560, 2)):
-        if x == 400:
-            break
+    for x, y in zip(range(780, 400, -2), range(90, 470, 2)):
         draw_character_and_grass(x, y)
     pass
 
-
 def move_rt_to_lb():
-    print('Moving left bottom to right top')
+    print('Moving right top to left bottom')
+    for x, y in zip(range(400, 20, -2), range(470, 90, -2)):
+        draw_character_and_grass(x, y)
     pass
 
 
