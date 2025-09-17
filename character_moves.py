@@ -47,7 +47,7 @@ def move_rectangle():
 def move_circle():
     print('Moving circle')
 
-    r = 200
+    r = 210
     for deg in range(-90, 270):
         x = r * math.cos(math.radians(deg)) + 400
         y = r * math.sin(math.radians(deg)) + 300
@@ -63,6 +63,6 @@ def draw_character_and_grass(x: float, y: float):
 
 while True:
     move_rectangle()
-    # move_circle()
+    move_circle()
 
 close_canvas()
