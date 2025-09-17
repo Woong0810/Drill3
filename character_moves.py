@@ -12,11 +12,13 @@ def move_top():
 
 def move_right():
     print('Moving right')
+    for y in range(90, 550, 2):
+        draw_character_and_grass(780, y)
     pass
 
 def move_bottom_start():
     print('Moving bottom')
-    for x in range(400, 770, 2):
+    for x in range(400, 780, 2):
         draw_character_and_grass(x, 90)
     pass
 
@@ -29,11 +31,11 @@ def move_left():
 
 def move_rectangle():
     print('Moving rectangle')
-    move_top()
-    move_right()
     move_bottom_start()
-    move_bottom_finish()
+    move_right()
+    move_top()
     move_left()
+    move_bottom_finish()
     pass
 
 def move_circle():
