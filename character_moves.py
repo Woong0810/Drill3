@@ -12,9 +12,15 @@ def move_rectangle():
 
 def move_circle():
     print('Moving circle')
-    clear_canvas()
-    grass.draw_now(400, 30)
-    character.draw_now(400, 90)
+
+    r = 200
+    for deg in range(0, 360):
+        x = r * math.cos(math.radians(deg)) + 400
+        y = r * math.sin(math.radians(deg)) + 300
+        clear_canvas()
+        grass.draw_now(400, 30)
+        character.draw_now(x, y)
+        delay(0.01)
     pass
 
 while True:
