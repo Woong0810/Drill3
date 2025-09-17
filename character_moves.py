@@ -62,7 +62,7 @@ def move_triangle():
 
 while True:
     move_rectangle()
-    move_circle()
     move_triangle()
+    move_circle()
 
 close_canvas()
