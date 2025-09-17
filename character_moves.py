@@ -8,11 +8,13 @@ character = load_image('character.png')
 
 def move_top():
     print('Moving top')
+    for x in range(780, 20, -2):
+        draw_character_and_grass(x, 560)
     pass
 
 def move_right():
     print('Moving right')
-    for y in range(90, 550, 2):
+    for y in range(90, 560, 2):
         draw_character_and_grass(780, y)
     pass
 
