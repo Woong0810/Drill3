@@ -14,8 +14,13 @@ def move_right():
     print('Moving right')
     pass
 
-def move_bottom():
+def move_bottom_start():
     print('Moving bottom')
+    for x in range(400, 770, 2):
+        draw_character_and_grass(x, 90)
+    pass
+
+def move_bottom_finish():
     pass
 
 def move_left():
@@ -26,7 +31,8 @@ def move_rectangle():
     print('Moving rectangle')
     move_top()
     move_right()
-    move_bottom()
+    move_bottom_start()
+    move_bottom_finish()
     move_left()
     pass
 
@@ -49,6 +55,6 @@ def draw_character_and_grass(x: float, y: float):
 
 while True:
     move_rectangle()
-    move_circle()
+    # move_circle()
 
 close_canvas()
