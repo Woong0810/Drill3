@@ -61,8 +61,13 @@ def draw_character_and_grass(x: float, y: float):
     delay(0.01)
 
 
+def move_triangle():
+    pass
+
+
 while True:
     move_rectangle()
     move_circle()
+    move_triangle()
 
 close_canvas()
