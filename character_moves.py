@@ -60,9 +60,12 @@ def draw_character_and_grass(x: float, y: float):
     character.draw_now(x, y)
     delay(0.01)
 
-
 def move_rb_to_lt():
     print('Moving right bottom to left top')
+    for x, y in zip(range(780, 20, -2), range(90, 560, 2)):
+        if x == 400:
+            break
+        draw_character_and_grass(x, y)
     pass
 
 
